@@ -48,7 +48,7 @@ export const People = () => {
               .replace("Gender open.", "")
               .replace("Gender open but dresses as a man. ", "")
               .replace("Male; ", "")}
-            {selectedPerson.name === "Martin" ? <p>Incredible at juggling</p> : <></>}
+            {selectedPerson.name === "Martin" ? <> Incredible at juggling.</> : <></>}
           </p>
         </div>
       ) : (
