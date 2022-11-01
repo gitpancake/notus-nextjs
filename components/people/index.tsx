@@ -40,7 +40,16 @@ export const People = () => {
           <h1 className="text-2xl font-bold text-yellow-500">
             {selectedPerson.name}: {selectedPerson.character}
           </h1>
-          <p className="text-xl">{selectedPerson.role.replace("CHARACTER DESCRIPTION:", "").replace("Male.", "").replace("Female.", "").replace("Gender open.", "")}</p>
+          <p className="text-xl">
+            {selectedPerson.role
+              .replace("CHARACTER DESCRIPTION:", "")
+              .replace("Male.", "")
+              .replace("Female.", "")
+              .replace("Gender open.", "")
+              .replace("Gender open but dresses as a man. ", "")
+              .replace("Male; ", "")}
+            {selectedPerson.name === "Martin" ? <p>Incredible at juggling</p> : <></>}
+          </p>
         </div>
       ) : (
         <></>
