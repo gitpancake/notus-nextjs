@@ -8,7 +8,6 @@ const Info = () => {
       </div>
       <div className="w-full p-5 py-10 flex justify-between gap-4 items-center flex-col rounded-lg bg-twenty_purple text-white shadow-lg border-yellow-500 border-2 mb-10 text-center">
         <p className="text-xl">There will be food, music and entertainment, please dress appropriately in your finest glitz and glam - this years ball is surely to be a hit!</p>
-        <p className="text-md">This is a gender-neutral, race-neutral, non-discriminatory, inclusive party, please do not bring any pets</p>
       </div>
     </>
   );
