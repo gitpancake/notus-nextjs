@@ -37,7 +37,9 @@ export const People = () => {
       </div>
       {selectedPerson ? (
         <div className="basis-1/2 p-4 flex flex-col gap-4">
-          <h1 className="text-2xl font-bold text-yellow-500">{selectedPerson.name} - Character Information</h1>
+          <h1 className="text-2xl font-bold text-yellow-500">
+            {selectedPerson.name}: {selectedPerson.character}
+          </h1>
           <p className="text-xl">{selectedPerson.role.replace("CHARACTER DESCRIPTION:", "").replace("Male.", "").replace("Female.", "").replace("Gender open.", "")}</p>
         </div>
       ) : (
